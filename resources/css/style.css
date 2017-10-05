@@ -2,7 +2,10 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   width: 100%;
   height: 80px;
   font-family: Verdana;
@@ -10,6 +13,10 @@ header {
   font-weight: bold;
   background-color: white;
 }
+div {
+  border: 1px solid black;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -18,7 +25,7 @@ header {
 }
 .logo span {
   color: MediumAquamarine;
-  justify-content: flex-start;
+  padding-left: 10px;
 }
 header nav {
   padding-right: 40px;
@@ -42,9 +49,6 @@ a {
   flex-direction: column;
   margin-right: 32px;
 }
-div {
-  border: 1px solid black;
-}
 
 .column.large {
   width: 630px;
@@ -57,31 +61,48 @@ div {
 .column.small {
   width: 240px;
 }
+
+.mainstory .imagecontent {
+  background-image: url(../images/mainstory.png)
+}
 .imagecontent {
   width: 630px;
-  height: 300px
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: 15px
+  height: 300px;
+}
+.imagecontent span {
+  font-size: 40px;
   text-align: left;
   color: white;
 }
-.mainstory .imagecontent {
-  background-image: url(../images/mainstory.png)
-  width: 630px
-  margin-top: 0;
-  font-size: 40px;
-  text-align: left;
-}
-.fallseason .imagecontent {
+.story .fallseason {
   background-image: url(../images/fallseason.png)
+  height: 300px;
+}
+
+.fallseason span {
+  font-size: 30px;
+  text-align: left;
+  color: white;
 }
 .narrative {
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
-.hipstercameraman .imagecontent {
-  background-image: url(../images/hipstercameraman)
+.story .hipstercameraman {
+  background-image: url(../images/hipstercameraman.png)
+}
+.hipstercameraman span {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.story .catceo {
+  background-image: url(../images/catceo.png)
+}
+.catceo span {
+  font-size: 30px;
+  text-align: left;
+  color: white;
 }
